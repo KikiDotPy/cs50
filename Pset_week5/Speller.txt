@@ -1,0 +1,9 @@
+Problem set of CS50 week 5 lecture. A coding problem that takes words in a dictionary and checks if a text file words are spelt correctly, 
+in the shortest amount of time possible.
+
+The codind problem was about implementing the DICTIONARY.C file, with some custom functione:
+1. LOAD - Loads the dictionary file into an Hash Table, which basically maps keys to values by using a hash function to compute an index (i.e. hash code) into an array of buckets
+2. HASH - Hash function takes a word and returns the hash or numerical value of the word to check if it’s correct
+3. SIZE - Return the number of the words loaded into the Hash Table
+4. CHECK - Check if the word is in the dictionary or not, regardless of capitalisation. 
+5. UNLOAD - Free the memory used
