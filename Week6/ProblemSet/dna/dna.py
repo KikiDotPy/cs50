@@ -7,14 +7,18 @@ if len(sys.argv) != 3:
     print("Usage: dna.py database.csv sequence.txt")
     sys.exit(1)
 
+# Creating variables containing file names from command line arguments
+csv_filename = sys.argv[1]
+dna_filename = sys.argv[2]
+
 # Open .csv file and read into memory as a list of dictionary
-csv_name = sys.argv[1]
-with open(csv_name) as csvfile:
+
+with open(csv_filename) as csvfile:
     reader = csv.DictReader(csvfile)
     people_data = list(reader)
  
 # Open dna file and read into memory
-dna_filename = sys.argv[2]
+
 with open(dna_filename) as dna_file:
     dna = dna_file.read()
     
