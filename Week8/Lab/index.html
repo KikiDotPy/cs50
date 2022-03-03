@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3>Is this a real question?</h3>
+                <h5 id="answer">Correct</h5>
+                <button type="submit" id="a">Yes</button>
+                <button type="submit" id="b">No</button>
+                <button type="submit" id="c">Maybe</button>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3>Is this another real or fake question?</h3>
+                <input type="text" id="input">
+                <button id="d">Submit</button>
+            </div>
+        </div>
+        <script>
+            // TODO: Add code to check answers to questions
+            let answer = document.getElementById("answer");
+            let buttonA = document.querySelector("#a");
+            let buttonB = document.querySelector("#b");
+            let buttonC = document.querySelector("#c");
+            buttonA.addEventListener("click", function(){
+                buttonB.style.backgroundColor = "#d9edff";
+                buttonC.style.backgroundColor = "#d9edff";
+                buttonA.style.backgroundColor = '#98bf64';
+                answer.textContent = "CORRECT!"
+                answer.style.color = "#98bf64";
+                answer.style.visibility = "visible";
+            });
+            buttonB.addEventListener("click", function(){
+                buttonA.style.backgroundColor = "#d9edff";
+                buttonC.style.backgroundColor = "#d9edff";
+                buttonB.style.backgroundColor = '#ff6347';
+                answer.textContent = "INCORRECT!";
+                answer.style.color = "#ff6347";
+                answer.style.visibility = "visible";
+            });
+            buttonC.addEventListener("click", function(){
+                buttonA.style.backgroundColor = "#d9edff";
+                buttonB.style.backgroundColor = "#d9edff";
+                buttonC.style.backgroundColor = '#ff6347';
+                answer.textContent = "INCORRECT!"
+                answer.style.color = "#ff6347";
+                answer.style.visibility = "visible";
+            });
+
+            let submitB = document.querySelector("#d");
+            submitB.addEventListener("click", function(){
+                let userInput = document.querySelector("#input").value.toLowerCase();
+                console.log(typeof(userInput));
+                if (userInput == "yes"){
+                    document.querySelector("#input").style.backgroundColor = "green";
+                } else {
+                    document.querySelector("#input").style.backgroundColor = "red";
+                }
+            });
+        </script>
+    </body>
+</html>
+
