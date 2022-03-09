@@ -12,6 +12,10 @@ body{
     width: 5%
 }
 
+.social-icon:hover {
+    width: 7%;
+}
+
 .name {
     color: #CDD6F6;
 }
@@ -92,11 +96,14 @@ a:hover, .green{
 }
 
 .vertical:hover {
-    display: flex;
+    display: block;
+    margin-top: 1%;
 }
 
 .nav-icon {
+    display: flex;
     float: left;
+    width: -webkit-fill-available;
 }
 
 .ul-social{
