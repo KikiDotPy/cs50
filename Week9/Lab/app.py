@@ -15,7 +15,6 @@ db = SQL("sqlite:///birthdays.db")
 MONTHS = ["Jenuary", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "Dicember"]
 DAYS = [range(1,32)]
 
-
 @app.after_request
 def after_request(response):
     """Ensure responses aren't cached"""
