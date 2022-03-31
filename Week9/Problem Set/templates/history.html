@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Portfolio
+{% endblock %}
+
+    {% block main %}
+    </div>
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">Symbol</th>
+                            <th scope="col">Shares</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Transacted</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for d in data %}
+                        <tr>
+                            <td>{{ d["symbol"] }}</td>
+                            <td>{{ d["shares_number"] }}</td>
+                            <td>{{ d["price"] | usd }}</td>
+                            <td>{{ d["date"] }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+{% endblock %}
