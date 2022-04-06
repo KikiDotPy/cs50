@@ -90,6 +90,17 @@ h1.timer {
     text-shadow: 2px 2px 4px #A66253;
 }
 
+.logo {
+    width: 30%;
+    margin-top: 1%;
+}
+
+.space {
+    margin-right: 1%;
+}
+
+/* link style */
+
 footer a {
     color: #34a0a4;
 }
@@ -98,11 +109,6 @@ footer a:hover {
     color: #a1c9c9;
 }
 
-.logo {
-    width: 30%;
-    margin-top: 1%;
-}
-
-.space {
-    margin-right: 1%;
+footer a:visited {
+    color: #a1c9c9;
 }
