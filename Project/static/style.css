@@ -2,6 +2,7 @@
 * {
     box-sizing: border-box;
     background: #f6f7f1;
+    color: #A66253;
   }
 
   /* Clear fix hack */
@@ -23,21 +24,14 @@
     margin: 1%;
 }
 
+/* LAYOUT */
+
 li {
     display: inline;
 }
 
 header button {
     float: right;
-}
-
-button {
-    color: #fff;
-    background: transparent;
-    border: 1px solid #db9487;
-    padding: .25rem .5rem;
-    font-size: .875rem;
-    border-radius: .2rem;
 }
 
 header {
@@ -51,7 +45,27 @@ header > nav {
     border-bottom: 1px solid #db9487;
 }
 
+
+
+/* STYLE */ 
+
+button.btn {
+    color: #fff;
+    background: rgba(210, 151, 138, 0.5);
+    border: none;
+    margin-bottom: 1%;
+}
+
+button.btn:hover {
+    background: rgba(210, 151, 138, 0.2);
+    color: #A66253;
+}
+
 .logo {
     width: 30%;
     margin-top: 1%;
+}
+
+.space {
+    margin-right: 1%;
 }
