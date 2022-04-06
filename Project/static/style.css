@@ -53,7 +53,7 @@ main, section, footer {
 }
 
 footer {
-    padding-top: 10%;
+    padding-top: 6%;
 }
 
 
@@ -88,6 +88,7 @@ h1.timer {
     color: #fff;
     font-family: 'Pacifico', cursive;
     text-shadow: 2px 2px 4px #A66253;
+    margin-top: 35px;
 }
 
 .logo {
@@ -97,6 +98,14 @@ h1.timer {
 
 .space {
     margin-right: 1%;
+}
+
+.btn-container {
+    margin-top: 15px;
+}
+
+#start {
+    margin-top: 30px;
 }
 
 /* link style */
