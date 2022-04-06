@@ -1,0 +1,23 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+    background: #f6f7f1;
+  }
+
+  /* Clear fix hack */
+  .clearfix:after {
+       content: ".";
+       display: block;
+       clear: both;
+       visibility: hidden;
+       line-height: 0;
+       height: 0;
+  }
+
+  .clear {
+      clear: both;
+  }
+
+.logo {
+    height: 20%;
+}
