@@ -254,3 +254,4 @@ def sell():
                    session["user_id"], quote["name"], quote["symbol"], quote["price"], shares_negative, date)
 
         return redirect("/")
+        
